@@ -1,0 +1,17 @@
+let x = 4 ;;
+let y = 4 in y*y;;
+let z= 5 in z+z;;
+let x = (fun x -> x+1) in x 5;;
+let x = 2 in let y = 3 in x * y;;
+let x = 2 in let y = 3 in x + y;;
+let x = 5 in let y = 3 in x - y;;
+let f x = x + 1;;
+(fun x -> x + 2) 3;;
+let f x y z = x + y + z;;
+if 2*8+30 < 50 then 5 else 3;;
+let f x y= x*y in f 2 3;;
+let rec f x = if x < 2 then x else (f (x-1))+(f (x-2));;
+let rec a m n = if m=0 then (n+1) else if n=0 then (a (m-1) 1) else (a (m-1) (a m (n-1))) in a 3 3;;
+let f x = if x < 1 then raise E 21 else x;;
+try f 0 with E x -> x * 2;;
+try f 42 with E x -> x * 2;;
